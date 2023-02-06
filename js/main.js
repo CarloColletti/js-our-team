@@ -42,7 +42,7 @@ const teams = [
         nome: 'Walter',
         cognome: 'Gordon',
         ruolo: 'Office Manager',
-        img: 'walter-gordon-office-managr.jpg',
+        img: 'walter-gordon-office-manager.jpg',
     },
 
     {
@@ -55,14 +55,14 @@ const teams = [
         nome: 'Scott',
         cognome: 'Extrada',
         ruolo: 'Developer',
-        img: 'walter-gordon-office-manager.jpg',
+        img: 'scott-estrada-developer.jpg',
     },
 
     {
         nome: 'arbara',
         cognome: 'Ramos',
         ruolo: 'Graphic Designer',
-        img: 'barbara-ramos-graphic-desiner.jpg',
+        img: 'barbara-ramos-graphic-designer.jpg',
     },
 ]
 
@@ -72,7 +72,7 @@ for (const log_single_member of teams) {
     ${log_single_member.img}
     il nome e cognome del collega è: ${log_single_member.nome} ${log_single_member.cognome},
     e ha il ruolo di: ${log_single_member.ruolo}
-    `)
+    `);
 }
 
 // creo un ciclo che modifica i DOM e mostra le schede per ogni collega
@@ -81,7 +81,7 @@ for (const member of teams) {
     card_container.innerHTML += `
     <div class="col-4">
         <div class="card" style="width: 18rem;">
-            <img src="${member.img}" class="card-img-top" alt="#">
+            <img src="./img/${member.img}" class="card-img-top" alt="#">
             <div class="card-body text-center">
                 <h5>${member.nome} ${member.cognome}</h>
                 <h6>${member.ruolo}</h6>
