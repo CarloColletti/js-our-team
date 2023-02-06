@@ -18,7 +18,8 @@ Prima la logica in italiano e poi traduciamo in codice.
 E ricordiamoci che console.log() è nostro amico!
 */
 
-
+// perndo l'elemento html che conterrà le card
+const card_container = document.getElementById('contenitore');
 
 // definiamo l'array del team
 
@@ -27,7 +28,7 @@ const teams = [
         nome: 'Wayne',
         cognome: 'Barnett',
         ruolo: 'Founder & CEO',
-        img: 'wayne-barnett-founder-ceo.pg',
+        img: 'wayne-barnett-founder-ceo.jpg',
     },
 
     {
@@ -50,6 +51,12 @@ const teams = [
         ruolo: 'Social Media Manager',
         img: 'angela-lopez-social-media-manager.jpg',
     },
+    {
+        nome: 'Scott',
+        cognome: 'Extrada',
+        ruolo: 'Developer',
+        img: 'walter-gordon-office-manager.jpg',
+    },
 
     {
         nome: 'arbara',
@@ -60,12 +67,29 @@ const teams = [
 ]
 
 // cicolo per prendere e mostrare a schermo i dati per ogni collega 
-for (const prova of teams) {
+for (const log_single_member of teams) {
     console.log(`
-    ${prova.img}
-    il nome e cognome del collega è: ${prova.nome} ${prova.cognome},
-    e ha il ruolo di: ${prova.ruolo}
+    ${log_single_member.img}
+    il nome e cognome del collega è: ${log_single_member.nome} ${log_single_member.cognome},
+    e ha il ruolo di: ${log_single_member.ruolo}
     `)
+}
+
+// creo un ciclo che modifica i DOM e mostra le schede per ogni collega
+
+for (const member of teams) {
+    card_container.innerHTML += `
+    <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src="${member.img}" class="card-img-top" alt="#">
+            <div class="card-body text-center">
+                <h5>${member.nome} ${member.cognome}</h>
+                <h6>${member.ruolo}</h6>
+            </div>
+        </div>
+    </div>
+
+    `
 }
 
 
