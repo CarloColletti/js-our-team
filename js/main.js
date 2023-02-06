@@ -59,7 +59,14 @@ const teams = [
     },
 ]
 
-
+// cicolo per prendere e mostrare a schermo i dati per ogni collega 
+for (const prova of teams) {
+    console.log(`
+    ${prova.img}
+    il nome e cognome del collega è: ${prova.nome} ${prova.cognome},
+    e ha il ruolo di: ${prova.ruolo}
+    `)
+}
 
 
 
