@@ -17,3 +17,50 @@ Ragioniamo come sempre a step.
 Prima la logica in italiano e poi traduciamo in codice.
 E ricordiamoci che console.log() è nostro amico!
 */
+
+
+
+// definiamo l'array del team
+
+const teams = [
+    {
+        nome: 'Wayne',
+        cognome: 'Barnett',
+        ruolo: 'Founder & CEO',
+        img: 'wayne-barnett-founder-ceo.pg',
+    },
+
+    {
+        nome: 'Angela',
+        cognome: 'Caroll',
+        ruolo: 'Chief Editor',
+        img: 'angela-caroll-chief-editor.jpg',
+    },
+
+    {
+        nome: 'Walter',
+        cognome: 'Gordon',
+        ruolo: 'Office Manager',
+        img: 'walter-gordon-office-managr.jpg',
+    },
+
+    {
+        nome: 'Angela',
+        cognome: 'Lopez',
+        ruolo: 'Social Media Manager',
+        img: 'angela-lopez-social-media-manager.jpg',
+    },
+
+    {
+        nome: 'arbara',
+        cognome: 'Ramos',
+        ruolo: 'Graphic Designer',
+        img: 'barbara-ramos-graphic-desiner.jpg',
+    },
+]
+
+
+
+
+
+
